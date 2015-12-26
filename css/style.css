@@ -1,0 +1,38 @@
+/*
+Base elements style
+*/
+
+body {
+  line-height: 1.6;
+  color: #3a3a3a;
+}
+
+
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/*
+Base layout styles
+*/
+.wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.main-header {
+  background-color: #3acec2;
+}
+
+.main-footer {
+  padding: 2em 0;
+  background-color: #d9e4ea;
+}
+
+
+/*
+Page Elements styles
+*/
