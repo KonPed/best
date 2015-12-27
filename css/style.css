@@ -109,4 +109,12 @@ Media Queries
     margin-right: 12px;
   }
 
+  .col {
+    display: inline-block;
+    margin-right: -4px;
+    width: 50%;
+    padding: 0 1em;
+    vertical-align: top;
+  }
+
 }
