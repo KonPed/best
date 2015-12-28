@@ -7,17 +7,47 @@ Base elements style
 }
 
 body {
+  font-family: 'Varela Round', sans-serif;
   line-height: 1.6;
   color: #3a3a3a;
 }
 
+p {
+  font-size: 0.95em;
+  margin-bottom: 1.8em;
+}
+
+h2,
+h3,
 a {
-  color: #fff;
+  color: #093a58;
+}
+
+h2,
+h3 {
+  margin-top: 0;
+}
+
+a {
   text-decoration: none;
 }
 
-h2 {
-  color: #003399;
+img {
+  max-width: 100%;
+}
+
+.logo {
+  width: 190px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  border: 2px solid green;
+}
+
+.main-header {
+  border: 3px dashed red;
 }
 
 /*
@@ -28,16 +58,10 @@ Navigation
   font-size: 1.25em;
 }
 
-.name,
-.main-nav li {
-  margin-top: 6px;
-  background-color: #fff;
-  text-align: center;
-  margin-bottom: 5px;
-}
-
-.name a {
+.name a,
+.main-nav a  {
   color: #003399;
+  text-align: center;
 }
 
 .main-nav a {
@@ -50,96 +74,21 @@ Navigation
   color: #093a58;
 }
 
-.name a,
-.main-nav a {
-  padding: 10px 15px;
-  display: block;
-}
-
-
 /*
 Base layout styles
 */
 
-.container {
-  padding: 0 1em;
-}
-
-.main-header {
+.banner {
+  color: #fff;
   background-color: #3acec2;
-  padding: 1.5em 0;
-  text-align: center;
 }
 
 .main-footer {
   padding: 2em 0;
+  margin-top: 30px;
   background-color: #d9e4ea;
-  text-align: center;
-  min-height: 90px;
 }
-
-
-/*
-Page Elements styles
-*/
 
 /*
 Media Queries
 */
-
-@media screen and (min-width: 769px) {
-
-  .name,
-  .main-nav li {
-    float: left;
-  }
-
-  .main-nav li:not(:first-child) {
-    margin-left: 12px;
-  }
-
-  .main-nav {
-    float: right;
-  }
-
-  .container {
-    width: 81%;
-    max-width: 1150px;
-    margin: 0 auto;
-  }
-
-  .col {
-    padding: 1em;
-    float: left;
-  }
-
-  .primary {
-    width: 40%;
-  }
-
-  .secondary {
-    width: 60%;
-  }
-
-  .wrap {
-    min-height: calc(100vh - 90px);
-    padding-bottom: 5px;
-  }
-
-  .feat-img {
-    width: 300px;
-    float: left;
-    margin: 5px 25px 25px 0;
-    padding: 10px;
-    border: 1px solid #d9e4ea;
-  }
-}
-
-/*
-Clearfix
-*/
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
