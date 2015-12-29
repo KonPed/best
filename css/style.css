@@ -12,6 +12,11 @@ body {
   color: #3a3a3a;
 }
 
+.container {
+  width: 99%;
+  margin: 0 auto;
+}
+
 p {
   font-size: 0.95em;
   margin-bottom: 1.8em;
@@ -52,6 +57,18 @@ figure {
   position: relative;
 }
 
+figure:hover figcaption {
+  height: 50%;
+  padding: 0.5em;
+  opacity: 1;
+}
+
+figure:hover .icon-location {
+  opacity: 1;
+  width: 35px;
+  right: -18px;
+}
+
 figcaption {
   line-height: 1.6;
   font-size: 0.9em;
@@ -61,17 +78,31 @@ figcaption {
   position: absolute;
   bottom: 0;
   width: 100%;
+  transition: height 0.2s ease-in-out, opacity 0.3s ease-in-out,
+  padding 0.4s ease-in-out;
+  height: 0;
+  padding: 0 0.5em;
+  opacity: 0;
+  overflow: hidden;
+}
+
+figcaption > h4 {
+  margin-bottom: 5px;
 }
 
 figcaption > p {
   margin: 0;
+  font-size: 0.89em;
 }
 
 .icon-location {
-  width: 35px;
+  width: 0px;
   position: absolute;
   right: -18px;
   top: -18px;
+  opacity: 0;
+  transition: right 0.3s ease-in-out, opacity 0.3s ease-in-out,
+  width 0.3s ease-in-out;
 }
 
 
@@ -115,6 +146,7 @@ Base layout styles
 }
 
 .banner {
+  width: 100%;
   text-align: center;
   color: #fff;
   background-color: #3acec2;
