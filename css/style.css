@@ -24,7 +24,8 @@ a {
 }
 
 h2,
-h3 {
+h3,
+h4 {
   margin-top: 0;
 }
 
@@ -38,6 +39,38 @@ img {
 
 .logo {
   width: 120px;
+}
+
+.feat-img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+  line-height: 0;
+  position: relative;
+}
+
+figcaption {
+  line-height: 1.6;
+  font-size: 0.9em;
+  color: #fff;
+  padding: 1em;
+  background-color: rgba(19, 43, 102, 0.85);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+figcaption > p {
+  margin: 0;
+}
+
+.icon-location {
+  width: 35px;
+  position: absolute;
+  right: -18px;
+  top: -18px;
 }
 
 /*
