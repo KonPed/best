@@ -24,7 +24,8 @@ a {
 }
 
 h2,
-h3 {
+h3,
+h4 {
   margin-top: 0;
 }
 
@@ -39,6 +40,41 @@ img {
 .logo {
   width: 120px;
 }
+
+
+.feat-img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+  line-height: 0;
+  position: relative;
+}
+
+figcaption {
+  line-height: 1.6;
+  font-size: 0.9em;
+  color: #fff;
+  padding: 1em;
+  background-color: rgba(19, 43, 102, 0.85);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+figcaption > p {
+  margin: 0;
+}
+
+.icon-location {
+  width: 35px;
+  position: absolute;
+  right: -18px;
+  top: -18px;
+}
+
+
 /*
 Navigation
 */
@@ -75,6 +111,7 @@ Base layout styles
 
 .main-header {
   padding: 0.9375em 0;
+  /*margin-bottom: 50px;*/
 }
 
 .banner {
@@ -105,6 +142,19 @@ Media Queries
 */
 
 @media screen and (min-width: 768px) {
+
+  body {
+    padding-top: 62px;
+  }
+
+  .main-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    box-shadow: 0 1px 5px #093a58;
+    z-index: 9999;
+  }
 
   .logo {
     width: 190px;
