@@ -109,6 +109,7 @@ Base layout styles
 
 .main-header {
   padding: 0.9375em 0;
+  /*margin-bottom: 50px;*/
 }
 
 .banner {
@@ -139,6 +140,19 @@ Media Queries
 */
 
 @media screen and (min-width: 768px) {
+
+  body {
+    padding-top: 62px;
+  }
+
+  .main-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    box-shadow: 0 1px 5px #093a58;
+    z-index: 9999;
+  }
 
   .logo {
     width: 190px;
