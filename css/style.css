@@ -51,6 +51,17 @@ figure {
   position: relative;
 }
 
+figure:hover figcaption {
+  height: 50%;
+  padding: 1em;
+  opacity: 1;
+}
+
+figure:hover .icon-location {
+  opacity: 1;
+  right: -18px;
+}
+
 figcaption {
   line-height: 1.6;
   font-size: 0.9em;
@@ -60,6 +71,12 @@ figcaption {
   position: absolute;
   bottom: 0;
   width: 100%;
+  transition: height 0.2s ease-in-out, opacity 0.3s ease-in-out,
+  padding 0.4s ease-in-out;
+  height: 0;
+  padding: 0 1em;
+  opacity: 0;
+  overflow: hidden;
 }
 
 figcaption > p {
@@ -69,8 +86,10 @@ figcaption > p {
 .icon-location {
   width: 35px;
   position: absolute;
-  right: -18px;
+  right: -30px;
   top: -18px;
+  opacity: 0;
+  transition: right 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 /*
